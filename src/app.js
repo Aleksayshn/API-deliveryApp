@@ -12,6 +12,12 @@ const formatsLogger = app.get("env") === "development" ? "dev" : "short";
 const { authRouter, usersRouter, categoriesRouter, productsRouter } = require('./routes/api');
 
 app.use(logger(formatsLogger));
+const corsOptions = {
+  origin: 'http://localhost:5173/tmpl-rct-vt/', https://aleksayshn.github.io/DeliveryApp/, https://aleksayshn.github.io/wheel-whisper-win/
+  credentials: true,
+};
+
+app.use(cors(corsOptions));
 app.use(cors());
 app.use(express.json());
 app.use(express.static('public'));
