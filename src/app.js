@@ -13,7 +13,7 @@ const { authRouter, usersRouter, categoriesRouter, productsRouter } = require('.
 
 app.use(logger(formatsLogger));
 const corsOptions = {
-  origin: 'http://localhost:5173/tmpl-rct-vt/', https://aleksayshn.github.io/DeliveryApp/, https://aleksayshn.github.io/wheel-whisper-win/
+  origin: 'http://localhost:5173', https://aleksayshn.github.io/DeliveryApp/, https://aleksayshn.github.io/wheel-whisper-win/
   credentials: true,
 };
 
